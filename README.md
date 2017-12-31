@@ -1,13 +1,30 @@
-# Machine Learning Engineer Nanodegree
-## Specializations
-## Project: Capstone Proposal and Capstone Project
+# MLND Capstone - Zillow
 
-**Note**
+### Overview
+This project is a solution to Zillow’s Home Value Prediction competition on Kaggle. The goal is to predict the error in Zillow’s real-estate value predictions. Zillow makes value estimations, called “Zestimates”, for more than 100 million real estate properties in the US. The median margin of error between Zestimate and the actual sales price has dropped from 14% to 5%, making Zillow one of the largest and most trusted sources for real estate information in the US. 
 
-The Capstone is a two-staged project. The first is the proposal component, where you can receive valuable feedback about your project idea, design, and proposed solution. This must be completed prior to your implementation and submitting for the capstone project. 
+The task is to predict the log-error between the Zestimate and the actual sales price, given the same real-estate features as the Zestimate algorithm. 
 
-You can find the [capstone proposal rubric here](https://review.udacity.com/#!/rubrics/410/view), and the [capstone project rubric here](https://review.udacity.com/#!/rubrics/108/view). Please ensure that you are following directions correctly when submitting these two stages which encapsulate your capstone.
+## Dependencies
 
-You will find an `open_projects` folder in these files. This will be where pre-curated capstone projects are available, should you choose to work on a project already partially designed for you. 
+* Python 3
+* OpenCV
+* Numpy
+* matplotlib
+* Jupyter Notebook
+* CatBoost
+* XGBoost
 
-Please email [machine-support@udacity.com](mailto:machine-support@udacity.com) if you have any questions.
+Note: Udacity has a handy Anaconda environment that includes many of the dependencies [here](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md)
+
+## Running the code 
+The project is completed in a Jupyter notebook. 
+To start Jupyter in your browser, run the following command at the terminal prompt and within your Python 3 environment:
+
+`> jupyter notebook`
+
+* DataExploration.ipynb - zillow dataset exploration
+* Preprocessing.ipynb - experimentation with feature engineering and data proprocessing to create training and testing sets
+* XGBoost.ipynb - XGBoost model impleementation, testing, and feature analysis
+* CatBoost.ipynb - CatBoost model impleementation, testing, and feature analysis
+
